@@ -2,6 +2,8 @@ import { useCallback } from "react";
 import ProofOfResidencyContainer from "../components/ProofOfResidencyContainer";
 import { useNavigate } from "react-router-dom";
 import styles from "./IssueIdentityPage.module.css";
+import IdentityContract from '../artifacts/contracts/Idnft.sol/IndentityContract.json'
+
 const IssueIdentityPage = () => {
   const navigate = useNavigate();
 
