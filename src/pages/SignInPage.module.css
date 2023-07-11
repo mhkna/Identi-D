@@ -1,0 +1,182 @@
+.homeIndicator {
+  position: absolute;
+  bottom: 8px;
+  left: calc(50% - 67px);
+  border-radius: var(--br-81xl);
+  background-color: var(--label-color-light-primary);
+  width: 134px;
+  height: 5px;
+}
+.homeindicator {
+  position: absolute;
+  top: 1140px;
+  left: 88px;
+  width: 390px;
+  height: 31px;
+}
+.signInGradientBox {
+  position: absolute;
+  top: 480px;
+  left: 0;
+  border-radius: 55px;
+  background: linear-gradient(
+    180deg,
+    rgba(151, 151, 151, 0.21),
+    rgba(151, 151, 151, 0.04) 52.78%,
+    rgba(102, 158, 0, 0.21) 85.59%
+  );
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 566px;
+  height: 762px;
+}
+.login {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  letter-spacing: -0.41px;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: var(--font-plus-jakarta-sans);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+  width: 121px;
+  height: 35px;
+  flex-shrink: 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.loginButton {
+  cursor: pointer;
+  border: 0.5px solid var(--color-darkgray-200);
+  padding: 0;
+  background-color: var(--color-yellowgreen);
+  position: absolute;
+  height: 6.05%;
+  width: 48.32%;
+  top: 80.71%;
+  right: 25.93%;
+  bottom: 13.24%;
+  left: 25.75%;
+  border-radius: var(--br-xl);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sep252019,
+.sep252020 {
+  position: relative;
+  text-decoration: underline;
+  letter-spacing: -0.41px;
+  line-height: 40px;
+  display: inline-block;
+  width: 124px;
+  height: 33px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+}
+.sep252020 {
+  margin-top: -7px;
+}
+.forgotPassSignup {
+  position: absolute;
+  top: 831px;
+  left: 400px;
+  width: 124px;
+  height: 59px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.passwordFrame,
+.usernameFrame {
+  border: 0.5px solid var(--color-darkgray-200);
+  font-weight: 600;
+  font-family: var(--font-plus-jakarta-sans);
+  font-size: var(--font-size-5xl);
+  background-color: var(--color-white);
+  position: absolute;
+  height: 6.03%;
+  width: 85.42%;
+  top: 62.11%;
+  right: 7.38%;
+  bottom: 31.86%;
+  left: 7.2%;
+  border-radius: var(--br-xl);
+  box-sizing: border-box;
+}
+.usernameFrame {
+  top: 53.02%;
+  bottom: 40.95%;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-lg) var(--padding-2xl) 18.749298095703125px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.signIn,
+.welcomeBack {
+  position: absolute;
+  display: inline-block;
+  height: 32px;
+}
+.signIn {
+  top: 528px;
+  left: 224px;
+  font-size: var(--font-size-13xl);
+  font-weight: 900;
+  font-family: var(--font-roboto);
+  color: var(--color-yellowgreen);
+  width: 118px;
+}
+.welcomeBack {
+  top: 326px;
+  left: 195px;
+  font-size: var(--font-size-5xl);
+  letter-spacing: -0.41px;
+  line-height: 35px;
+  font-weight: 600;
+  width: 175px;
+}
+.deloitteDPicture {
+  position: absolute;
+  top: 0;
+  left: 268px;
+  width: 158px;
+  height: 151px;
+  object-fit: cover;
+}
+.identi {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  font-weight: 900;
+  display: inline-block;
+  width: 315px;
+  height: 113px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000;
+}
+.identidyFrame {
+  position: absolute;
+  top: 158px;
+  left: 85px;
+  width: 426px;
+  height: 151px;
+  font-size: var(--font-size-81xl);
+  color: var(--label-color-light-primary);
+  font-family: var(--font-roboto);
+}
+.signInPage {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1199px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray-100);
+  font-family: var(--font-plus-jakarta-sans);
+}

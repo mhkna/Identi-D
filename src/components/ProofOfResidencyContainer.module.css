@@ -1,0 +1,314 @@
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18);
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    box-shadow: 1px -1px rgba(62, 62, 62, 0.18), 2px -2px rgba(62, 62, 62, 0.18),
+      3px -3px rgba(62, 62, 62, 0.18), 4px -4px rgba(62, 62, 62, 0.18),
+      5px -5px rgba(62, 62, 62, 0.18), 6px -6px rgba(62, 62, 62, 0.18),
+      7px -7px rgba(62, 62, 62, 0.18), 8px -8px rgba(62, 62, 62, 0.18);
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+.overallMiddleBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-37xl);
+  background-color: var(--color-gray-500);
+  box-shadow: 0 3.200000047683716px 3.2px rgba(0, 0, 0, 0.25) inset;
+  width: 976px;
+  height: 873.6px;
+}
+.proofOfResidencyButtonChild {
+  position: absolute;
+  top: 39.2px;
+  left: 0;
+  box-shadow: 0 1.5999997854232788px 1.6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-sm);
+  align-items: center;
+  justify-content: center;
+}
+.proofOfResidency {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 37.59px;
+  font-weight: 600;
+}
+.proofOfResidencyButton {
+  position: absolute;
+  top: 632.8px;
+  left: 146.4px;
+  width: 197px;
+  height: 76.2px;
+}
+.residency2Button {
+  position: absolute;
+  top: 39.2px;
+  left: 3.2px;
+  box-shadow: 0 1.5999997854232788px 1.6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-sm);
+  align-items: center;
+  justify-content: center;
+}
+.proofOfResidency2Button {
+  position: absolute;
+  top: 554.4px;
+  left: 544.8px;
+  width: 209px;
+  height: 76.2px;
+}
+.attachBirthCertificateButtoChild {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  box-shadow: 0 1.5999997854232788px 1.6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-4xs) var(--padding-sm);
+  align-items: center;
+  justify-content: center;
+}
+.attachBirthCertificateButto,
+.socialSecurityCardButton {
+  position: absolute;
+  top: 740.8px;
+  left: 146.4px;
+  width: 165px;
+  height: 73px;
+}
+.socialSecurityCardButton {
+  top: 662.4px;
+  left: 548px;
+  width: 211px;
+}
+.issueIdentity {
+  position: relative;
+  font-size: var(--font-size-2xl-6);
+  line-height: 28.19px;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--label-color-light-primary);
+  text-align: left;
+}
+.issueIdentityWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-sm) var(--padding-7xs);
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #d4e7b2, #85bc25 99.99%);
+  box-shadow: 0 2.4000017642974854px 2.4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.issueIdentityWrapper:hover {
+  animation: 1s ease 0s 1 normal none shadow-pop-tr;
+  opacity: 1;
+}
+.issueIdentityButton {
+  position: absolute;
+  top: 762.4px;
+  left: 548px;
+  box-shadow: 0 4.800004482269287px 4.8px rgba(0, 0, 0, 0.25);
+  width: 159px;
+  height: 57px;
+  cursor: pointer;
+}
+.didWalletAddressBox,
+.drivingRestrictionsBox,
+.hairColorBox {
+  border: 0;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: var(--br-17xl-8);
+  box-shadow: 0 3.200000047683716px 3.2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-5xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.didWalletAddressBox {
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-xl);
+  position: absolute;
+  top: 554.4px;
+  left: 138.4px;
+}
+.drivingRestrictionsBox,
+.hairColorBox {
+  top: 476px;
+}
+.drivingRestrictionsBox {
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-xl);
+  position: absolute;
+  left: 544.8px;
+}
+.hairColorBox {
+  left: 138.4px;
+}
+.eyeColorBox,
+.hairColorBox,
+.heightBox,
+.zipCodeBox {
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-xl);
+  position: absolute;
+}
+.zipCodeBox {
+  border: 0;
+  font-weight: 600;
+  background-color: transparent;
+  top: 319.2px;
+  left: 544.8px;
+  border-radius: var(--br-17xl-8);
+  box-shadow: 0 3.200000047683716px 3.2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-5xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.eyeColorBox,
+.heightBox {
+  top: 397.6px;
+}
+.eyeColorBox {
+  border: 0;
+  font-weight: 600;
+  background-color: transparent;
+  left: 544.8px;
+  border-radius: var(--br-17xl-8);
+  box-shadow: 0 3.200000047683716px 3.2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-5xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.heightBox {
+  left: 138.4px;
+}
+.cityBox,
+.heightBox,
+.streetAdress2Box {
+  border: 0;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: var(--br-17xl-8);
+  box-shadow: 0 3.200000047683716px 3.2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-5xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.cityBox {
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-xl);
+  position: absolute;
+  top: 319.2px;
+  left: 138.4px;
+}
+.streetAdress2Box {
+  top: 241.8px;
+  left: 544.8px;
+}
+.dateOfBirthBox,
+.streetAdress2Box,
+.streetAdressBox {
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-xl);
+  position: absolute;
+}
+.streetAdressBox {
+  border: 0;
+  font-weight: 600;
+  background-color: transparent;
+  top: 240.8px;
+  left: 138.4px;
+  border-radius: var(--br-17xl-8);
+  box-shadow: 0 3.200000047683716px 3.2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-5xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dateOfBirthBox {
+  top: 162.4px;
+  left: 544.8px;
+}
+.dateOfBirthBox,
+.lastNameBox,
+.middleNameBox {
+  border: 0;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: var(--br-17xl-8);
+  box-shadow: 0 3.200000047683716px 3.2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-5xl);
+  align-items: center;
+  justify-content: center;
+}
+.lastNameBox {
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-xl);
+  position: absolute;
+  top: 162.4px;
+  left: 138.4px;
+}
+.middleNameBox {
+  top: 84px;
+  left: 544.8px;
+}
+.firstNameBox,
+.middleNameBox,
+.overallInputBoxGroup {
+  position: absolute;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-poppins);
+}
+.firstNameBox {
+  border: 0;
+  font-weight: 600;
+  background-color: transparent;
+  top: 84px;
+  left: 138.4px;
+  border-radius: var(--br-17xl-8);
+  box-shadow: 0 3.200000047683716px 3.2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-6xs) var(--padding-5xl);
+  align-items: center;
+  justify-content: center;
+}
+.overallInputBoxGroup {
+  top: 275.43px;
+  left: 529px;
+  width: 976px;
+  height: 873.6px;
+  text-align: left;
+  color: var(--color-yellowgreen);
+}

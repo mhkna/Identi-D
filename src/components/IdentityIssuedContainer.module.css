@@ -1,0 +1,133 @@
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72%,
+  90%,
+  to {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+}
+.overallMiddleBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-37xl);
+  background-color: var(--color-gray-500);
+  box-shadow: 0 3.200000047683716px 3.2px rgba(0, 0, 0, 0.25) inset;
+  width: 756px;
+  height: 491px;
+}
+.issueNewIdentity {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  line-height: 46.99px;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.issueNewIdentityFrame {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xl) var(--padding-smi);
+  background-color: transparent;
+  position: absolute;
+  top: 355px;
+  left: 400px;
+  background: linear-gradient(90deg, #d4e7b2, #85bc25 99.99%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.issueNewIdentityFrame:hover {
+  animation: 1s ease 0s 1 normal none scale-up;
+  opacity: 1;
+}
+.help {
+  position: relative;
+  line-height: 46.99px;
+  font-weight: 600;
+}
+.helpFrame {
+  position: absolute;
+  top: 355px;
+  left: 109px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xl) var(--padding-86xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.identityIssued,
+.userShouldCheck {
+  position: absolute;
+  display: inline-block;
+}
+.userShouldCheck {
+  top: 167px;
+  left: 158px;
+  font-size: var(--font-size-17xl);
+  line-height: 37.59px;
+  font-weight: 600;
+  color: var(--color-gray-300);
+  text-align: center;
+  width: 440px;
+  height: 78px;
+}
+.identityIssued {
+  top: 47px;
+  left: 146px;
+  font-size: 56.39px;
+  line-height: 82.23px;
+  color: var(--color-darkkhaki);
+  width: 716.61px;
+}
+.overallInputBoxFrame {
+  position: absolute;
+  top: 417px;
+  left: 637px;
+  width: 862.61px;
+  height: 491px;
+  opacity: 1;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--label-color-light-primary);
+  font-family: var(--font-poppins);
+}
+.overallInputBoxFrame.animate {
+  animation: 1.5s ease-in 0s 1 normal backwards bounce-in-top;
+}

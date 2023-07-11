@@ -1,14 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import createCache from "@emotion/cache";
+import { CacheProvider } from "@emotion/react";
+import "./global.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const chakraTheme = extendTheme({
+  styles: { global: { img: { maxWidth: "unset" } } },
+  colors: {
+    credentials: {
+      50: "#e6fee6",
+      100: "#b5fdb5",
+      200: "#83fc83",
+      300: "#51fa51",
+      400: "#20f920",
+      500: "#07f807",
+      600: "#06df06",
+      700: "#05ae05",
+      800: "#037c03",
+      900: "#024a02",
+    },
+  },
+});
+const emotionCache = createCache({
+  key: "emotion-cache",
+  prepend: true,
+});
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+
+root.render(
+  <BrowserRouter>
+    <CacheProvider value={emotionCache}>
+      <ChakraProvider theme={chakraTheme}>
+        <App />
+      </ChakraProvider>
+    </CacheProvider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

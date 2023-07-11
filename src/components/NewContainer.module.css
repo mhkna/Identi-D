@@ -1,0 +1,51 @@
+.iconlylightwallet {
+  position: relative;
+  width: 39px;
+  height: 39px;
+}
+.new {
+  position: relative;
+}
+.topUp {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-2xs-5);
+}
+.moneyTransferSvgrepoCom1Icon {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.homeInner,
+.topUpParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.topUpParent {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-29xl);
+}
+.homeInner {
+  position: absolute;
+  top: 351px;
+  left: 30px;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-gray-100);
+  box-shadow: 0 4.5px 58.5px rgba(0, 0, 0, 0.25);
+  width: 535.5px;
+  flex-direction: column;
+  padding: var(--padding-2xl) var(--padding-50xl);
+  box-sizing: border-box;
+  align-items: flex-end;
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  color: var(--label-color-light-primary);
+  font-family: var(--font-poppins);
+}

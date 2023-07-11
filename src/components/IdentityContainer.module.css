@@ -1,0 +1,91 @@
+.aboutOurSolution {
+  position: relative;
+  line-height: 46.99px;
+  font-weight: 600;
+}
+.aboutOurSolutionFrame {
+  position: absolute;
+  top: 282.05px;
+  left: 0.34px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xl) var(--padding-base);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.issueIdentity {
+  position: relative;
+  font-size: var(--font-size-6xl);
+  line-height: 46.99px;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.issueIdentityFrame {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-5xl) var(--padding-30xl);
+  background-color: transparent;
+  position: absolute;
+  top: 282.05px;
+  left: 291.34px;
+  background: linear-gradient(90deg, #d4e7b2, #85bc25 99.99%);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.oneStopSolution {
+  position: relative;
+  line-height: 35.24px;
+  font-weight: 500;
+  display: inline-block;
+  width: 559.19px;
+  flex-shrink: 0;
+}
+.oneStopSolutionToSimplifyWrapper {
+  position: absolute;
+  top: 81.63px;
+  left: -10px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 28.19px;
+  color: var(--color-dimgray);
+}
+.identityForThe {
+  position: relative;
+  line-height: 82.23px;
+  background: linear-gradient(90deg, rgba(133, 187, 36, 0.25), #85bb24 83.51%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.identityForTheFutureWrapper {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 56.39px;
+}
+.middlePageGrouping {
+  position: absolute;
+  top: 466.38px;
+  left: 192.66px;
+  width: 716.61px;
+  height: 377.2px;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--label-color-light-primary);
+  font-family: var(--font-poppins);
+}

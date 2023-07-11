@@ -1,0 +1,206 @@
+.identi {
+  position: relative;
+  font-weight: 900;
+  display: inline-block;
+  width: 306px;
+  height: 113px;
+  flex-shrink: 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000;
+}
+.deloitteDPicture {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 151px;
+  object-fit: cover;
+}
+.identidyTitle {
+  width: 426px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1px;
+  color: var(--label-color-light-primary);
+  font-family: var(--font-roboto);
+}
+.oneStopSolution {
+  position: relative;
+  font-size: 28px;
+  letter-spacing: -0.41px;
+  line-height: 35px;
+  font-weight: 600;
+  display: inline-block;
+  width: 448px;
+  height: 114px;
+  flex-shrink: 0;
+}
+.userTerms {
+  text-decoration: underline;
+}
+.iAgreeWithTheUserTerms {
+  margin: 0;
+}
+.iAgreeWithContainer {
+  position: relative;
+  font-size: var(--font-size-xl);
+  letter-spacing: -0.41px;
+  line-height: 20px;
+  font-weight: 300;
+  display: inline-block;
+  width: 347px;
+  height: 55.82px;
+  flex-shrink: 0;
+}
+.icon {
+  position: absolute;
+  top: 53.73px;
+  left: 418px;
+  width: 26.27px;
+  height: 29.55px;
+}
+.createANew,
+.newAccount {
+  position: absolute;
+  letter-spacing: -0.41px;
+  line-height: 40px;
+  font-weight: 600;
+  display: inline-block;
+}
+.createANew {
+  width: 87.21%;
+  top: calc(50% - 10.04px);
+  left: 7.81%;
+  height: 39.51px;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+}
+.newAccount {
+  top: 16px;
+  left: 93.11px;
+  font-size: var(--font-size-xl);
+  width: 172.56px;
+  height: 36.12px;
+}
+.greyStarBox {
+  position: absolute;
+  top: 22px;
+  left: 33.24px;
+  border-radius: var(--br-xs);
+  width: 53.05px;
+  height: 36.22px;
+}
+.newAccountBox {
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0.5px solid var(--color-darkgray-200);
+  box-sizing: border-box;
+  width: 492.5px;
+  height: 134.09px;
+  font-size: var(--font-size-sm);
+}
+.icon1 {
+  position: absolute;
+  top: 53.73px;
+  left: 414px;
+  width: 37.8px;
+  height: 34.27px;
+}
+.existingAccount,
+.restoreYourAccount {
+  position: absolute;
+  letter-spacing: -0.41px;
+  line-height: 40px;
+  display: inline-block;
+  font-family: var(--font-plus-jakarta-sans);
+  color: var(--color-gray-400);
+  text-align: left;
+}
+.restoreYourAccount {
+  width: 87.21%;
+  top: calc(50% - 10.04px);
+  left: 8.03%;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  opacity: 0.5;
+  mix-blend-mode: normal;
+}
+.existingAccount {
+  top: 16px;
+  left: 93.11px;
+  font-size: var(--font-size-xl);
+  width: 201.12px;
+  height: 35.02px;
+}
+.greenStarBox {
+  position: absolute;
+  top: 22px;
+  left: 33px;
+  width: 53.05px;
+  height: 36.22px;
+}
+.existingAccountBox {
+  cursor: pointer;
+  border: 0.5px solid var(--color-darkgray-200);
+  padding: 0;
+  background-color: var(--color-white);
+  position: relative;
+  border-radius: var(--br-xl);
+  box-sizing: border-box;
+  width: 492.5px;
+  height: 134.09px;
+}
+.homeIndicator {
+  position: absolute;
+  bottom: 8px;
+  left: calc(50% - 67px);
+  border-radius: var(--br-81xl);
+  background-color: var(--label-color-light-primary);
+  width: 134px;
+  height: 5px;
+}
+.homeindicator {
+  position: relative;
+  width: 390px;
+  height: 31px;
+}
+.newAccountExistingAccount {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.termsAndConditionsPage,
+.termsAndConditionsPageChild {
+  position: relative;
+  background-color: var(--color-white);
+  box-sizing: border-box;
+}
+.termsAndConditionsPageChild {
+  cursor: pointer;
+  align-self: stretch;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-darkgray-100);
+  height: 35px;
+  margin-top: -507px;
+}
+.termsAndConditionsPage {
+  width: 100%;
+  height: 1199px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 159px 74px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: var(--font-size-81xl);
+  color: var(--color-darkgray-100);
+  font-family: var(--font-plus-jakarta-sans);
+}

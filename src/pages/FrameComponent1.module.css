@@ -1,0 +1,98 @@
+.image16Icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1288px;
+  height: 2427px;
+  object-fit: cover;
+}
+.frameChild,
+.frameInner,
+.frameItem {
+  position: absolute;
+  top: 274px;
+  left: 97px;
+  background-color: var(--color-white);
+  width: 1095px;
+  height: 2025px;
+}
+.frameInner,
+.frameItem {
+  top: 154px;
+  left: 1035px;
+  width: 157px;
+  height: 166px;
+}
+.frameInner {
+  top: 2299px;
+  left: 146px;
+  width: 996px;
+  height: 91px;
+}
+.rectangleDiv {
+  position: absolute;
+  top: 390px;
+  left: 97px;
+  background-color: #010101;
+  width: 1095px;
+  height: 1859px;
+}
+.scanQrCode {
+  position: absolute;
+  top: 262px;
+  left: 188px;
+  font-weight: 900;
+  display: inline-block;
+  width: 912px;
+  height: 116px;
+}
+.groupIcon {
+  position: absolute;
+  top: 915px;
+  left: 298px;
+  width: 691.11px;
+  height: 743px;
+}
+.scanQrCode1,
+.vectorIcon {
+  position: relative;
+  width: 107.33px;
+  height: 101.2px;
+}
+.scanQrCode1 {
+  font-size: var(--font-size-45xl);
+  font-family: var(--font-roboto);
+  color: #fef8f8;
+  text-align: left;
+  display: inline-block;
+  width: 506px;
+  height: 92px;
+  flex-shrink: 0;
+  -webkit-text-stroke: 1px #000;
+}
+.vectorParent {
+  cursor: pointer;
+  border: 0;
+  padding: 58px 120px;
+  background-color: #34dd5a;
+  position: absolute;
+  top: 1884px;
+  left: 188px;
+  border-radius: var(--br-xl);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.image16Parent {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 2427px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-45xl);
+  color: #454343;
+  font-family: var(--font-roboto);
+}
