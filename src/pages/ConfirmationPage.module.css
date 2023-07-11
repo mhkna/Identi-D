@@ -1,0 +1,183 @@
+.confirmationPageChild {
+  position: absolute;
+  top: 803px;
+  left: 549px;
+  border-radius: 50%;
+  background: linear-gradient(
+    23.51deg,
+    rgba(166, 165, 167, 0.56),
+    rgba(255, 255, 255, 0.8)
+  );
+  width: 377px;
+  height: 377px;
+}
+.confirmationPageItem {
+  position: absolute;
+  top: 405px;
+  left: 749px;
+  border-radius: 50%;
+  background: linear-gradient(
+    169.73deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(166, 165, 167, 0.56)
+  );
+  width: 567px;
+  height: 567px;
+}
+.confirmationPageInner {
+  position: absolute;
+  top: -364px;
+  left: 1012px;
+  border-radius: 50%;
+  background: linear-gradient(
+    215.99deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(166, 165, 167, 0.56)
+  );
+  width: 998px;
+  height: 998px;
+}
+.identityForThe {
+  position: absolute;
+  top: 182.43px;
+  left: 67px;
+  line-height: 82.23px;
+  display: inline-block;
+  font-family: var(--font-poppins);
+  background: linear-gradient(90deg, rgba(133, 187, 36, 0.25), #85bb24 83.51%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 716.61px;
+}
+.profileIconChild {
+  position: absolute;
+  height: 41.86%;
+  width: 42.42%;
+  top: 0;
+  right: 0;
+  bottom: 58.14%;
+  left: 57.58%;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #d8e9b9, #85bc25 99.99%);
+}
+.vectorIcon {
+  height: 77.55%;
+  width: 73.65%;
+  top: 22.45%;
+  right: 26.35%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.b,
+.profileIcon,
+.vectorIcon {
+  position: absolute;
+}
+.b {
+  top: 0.3px;
+  left: 48.1px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.profileIcon {
+  top: 61.67px;
+  left: 1875px;
+  width: 69.24px;
+  height: 65.77px;
+  font-size: 21.15px;
+  color: var(--color-white);
+}
+.home,
+.solutions {
+  position: absolute;
+  top: 0;
+  font-weight: 500;
+}
+.home {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  left: 0;
+  font-size: 28.19px;
+  font-family: var(--font-lato);
+  color: var(--label-color-light-primary);
+  text-align: left;
+  display: inline-block;
+}
+.solutions {
+  left: 410.97px;
+}
+.portal {
+  top: 0;
+  left: 195.97px;
+  color: var(--color-yellowgreen);
+}
+.aboutUs,
+.contactUs,
+.portal {
+  position: absolute;
+  font-weight: 500;
+}
+.aboutUs {
+  top: 0;
+  left: 676.97px;
+}
+.contactUs {
+  top: calc(50% - 17px);
+  left: 926.97px;
+}
+.headerPages {
+  position: absolute;
+  top: 87.43px;
+  left: 464.03px;
+  width: 1100.97px;
+  height: 34px;
+  font-size: 28.19px;
+}
+.image1Icon {
+  position: absolute;
+  top: 0;
+  left: 204px;
+  width: 114px;
+  height: 118px;
+  object-fit: cover;
+}
+.identi,
+.identidLogo {
+  position: absolute;
+  width: 372px;
+}
+.identi {
+  top: 16px;
+  left: 0;
+  font-weight: 900;
+  display: inline-block;
+  height: 118px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000;
+}
+.identidLogo {
+  top: 48.43px;
+  left: 75px;
+  height: 134px;
+  font-size: var(--font-size-56xl);
+  font-family: var(--font-roboto);
+}
+.confirmationPage {
+  position: relative;
+  border-radius: 35.24px;
+  background-color: var(--color-white);
+  box-shadow: 35.24305725097656px 35.24305725097656px 23.5px rgba(0, 0, 0, 0.25);
+  border: 2.3px solid var(--color-white);
+  box-sizing: border-box;
+  width: 100%;
+  height: 1230px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 56.39px;
+  color: var(--label-color-light-primary);
+  font-family: var(--font-lato);
+}

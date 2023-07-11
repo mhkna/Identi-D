@@ -1,0 +1,317 @@
+.frameChild,
+.statusbarIcon {
+  position: absolute;
+  top: 0;
+  left: 13px;
+  width: 562.5px;
+  height: 66px;
+}
+.frameChild {
+  top: 81px;
+  left: 1px;
+  border-radius: var(--br-26xl) var(--br-26xl) 0 0;
+  background-color: var(--color-gray-700);
+  width: 589.5px;
+  height: 1225.5px;
+}
+.homeIndicator1 {
+  position: relative;
+  border-radius: var(--br-131xl);
+  background-color: var(--label-color-light-primary);
+  width: 201px;
+  height: 7.5px;
+}
+.homeIndicator {
+  position: absolute;
+  height: 3.52%;
+  width: 95.42%;
+  top: 96.48%;
+  right: 2.12%;
+  bottom: 0;
+  left: 2.46%;
+  display: flex;
+  flex-direction: column;
+  padding: 12.506980895996094px 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home03Icon {
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+.home03Wrapper {
+  border-radius: var(--br-7xs);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-7xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 0;
+}
+.homeChild {
+  position: absolute;
+  margin: 0 !important;
+  top: 82.5px;
+  left: 34.5px;
+  width: 42.75px;
+  height: 42.75px;
+  display: none;
+  z-index: 1;
+}
+.home {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs-5) var(--padding-12xl-5);
+  background-color: transparent;
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-10xs) 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: var(--gap-10xs);
+}
+.bankNote03Icon {
+  position: relative;
+  width: 66px;
+  height: 63px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.payments1 {
+  position: relative;
+  font-weight: 500;
+}
+.text {
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.balance,
+.payments {
+  align-self: stretch;
+  background-color: var(--color-gray-100);
+  flex-direction: column;
+  padding: var(--padding-2xs-5) var(--padding-12xl-5);
+  justify-content: center;
+  gap: var(--gap-10xs);
+}
+.payments {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.balance {
+  overflow: hidden;
+}
+.balance,
+.homeParent,
+.more {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.more {
+  align-self: stretch;
+  border-radius: 0 var(--br-10xs) 0 0;
+  background-color: var(--color-gray-100);
+  flex-direction: column;
+  padding: var(--padding-2xs-5) var(--padding-12xl-5);
+  justify-content: center;
+  gap: var(--gap-10xs);
+}
+.homeParent {
+  height: 82.5px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.iconsHead,
+.navbar {
+  border-radius: var(--br-xs);
+  display: flex;
+}
+.iconsHead {
+  align-self: stretch;
+  background-color: var(--color-gray-100);
+  flex-direction: row;
+  padding: var(--padding-lg) var(--padding-xs);
+  align-items: center;
+  justify-content: flex-start;
+}
+.navbar {
+  position: absolute;
+  top: 1159.5px;
+  left: 1px;
+  width: 589.5px;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--color-gray-200);
+  font-family: var(--font-inter);
+}
+.image13Icon {
+  position: absolute;
+  top: 1.5px;
+  left: 307px;
+  width: 60px;
+  height: 79.5px;
+  object-fit: cover;
+}
+.identi {
+  position: absolute;
+  top: 18px;
+  left: 209.5px;
+  font-size: var(--font-size-17xl);
+  display: inline-block;
+  width: 343.5px;
+  height: 73.5px;
+  text-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1.5px #000;
+}
+.frameItem {
+  position: absolute;
+  top: 199.5px;
+  left: 25px;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gainsboro);
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
+  border: 1.5px solid var(--color-snow-100);
+  box-sizing: border-box;
+  width: 540px;
+  height: 960px;
+}
+.credentials {
+  position: absolute;
+  top: 1240.5px;
+  left: 131.5px;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-darkgreen);
+}
+.scanYourQr,
+.verifyCredential {
+  position: absolute;
+  font-size: 34.23px;
+  font-weight: 900;
+}
+.verifyCredential {
+  top: 125px;
+  left: 164px;
+  text-align: center;
+}
+.scanYourQr {
+  top: 286px;
+  left: 145px;
+}
+.image1Icon {
+  position: absolute;
+  top: 57.05px;
+  left: 57.05px;
+  width: 281.83px;
+  height: 311.49px;
+  object-fit: cover;
+}
+.vectorIcon,
+.vectorIcon1,
+.vectorIcon2,
+.vectorIcon3 {
+  position: absolute;
+  height: 11.33%;
+  width: 12.18%;
+  top: 4.59%;
+  right: 4.94%;
+  bottom: 84.08%;
+  left: 82.88%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vectorIcon1,
+.vectorIcon2,
+.vectorIcon3 {
+  top: 84.08%;
+  bottom: 4.59%;
+}
+.vectorIcon2,
+.vectorIcon3 {
+  top: 4.59%;
+  right: 82.88%;
+  bottom: 84.08%;
+  left: 4.94%;
+}
+.vectorIcon3 {
+  top: 84.08%;
+  bottom: 4.59%;
+}
+.frameInner,
+.image1Parent {
+  position: absolute;
+  top: 401px;
+  left: 96px;
+  width: 395.1px;
+  height: 424.76px;
+}
+.frameInner {
+  top: 947px;
+  left: 129px;
+  border-radius: 22.82px;
+  background-color: var(--color-limegreen);
+  width: 324.04px;
+  height: 85.57px;
+  cursor: pointer;
+}
+.vectorIcon4 {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 47px;
+}
+.done {
+  position: relative;
+  display: inline-block;
+  width: 78px;
+  flex-shrink: 0;
+}
+.vectorParent {
+  position: absolute;
+  top: 968px;
+  left: 154px;
+  width: 178px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 54px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 29.67px;
+  color: var(--color-snow-200);
+}
+.qrCode,
+.statusbarParent {
+  height: 1335px;
+  overflow: hidden;
+}
+.statusbarParent {
+  position: absolute;
+  top: 0;
+  left: 0.5px;
+  width: 594px;
+}
+.qrCode {
+  position: relative;
+  background: linear-gradient(12.86deg, #005809, #81ed66);
+  width: 100%;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--label-color-light-primary);
+  font-family: var(--font-roboto);
+}

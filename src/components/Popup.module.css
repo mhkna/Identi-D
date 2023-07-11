@@ -1,0 +1,96 @@
+.questionIcon {
+  position: relative;
+  width: 79.38px;
+  height: 79.64px;
+}
+.createAVerifiable {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.33px;
+  line-height: 39.68px;
+  font-weight: 600;
+}
+.docu {
+  letter-spacing: 0.17px;
+}
+.m {
+  letter-spacing: 0.31px;
+}
+.documentSelectedDriversContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: 23.15px;
+  line-height: 36.38px;
+  color: #52575c;
+}
+.text {
+  gap: 13.23px;
+}
+.content,
+.text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.normalButton {
+  flex: 1;
+  cursor: pointer;
+}
+.normalButton1 {
+  flex: 1;
+}
+.buttons,
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 39.68px;
+}
+.buttons {
+  align-self: stretch;
+  flex-direction: row;
+}
+.popup {
+  position: relative;
+  border-radius: 13.23px;
+  background-color: var(--color-white);
+  width: 461.38px;
+  flex-direction: column;
+  padding: 39.683921813964844px 0 26.455951690673828px;
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: center;
+  font-size: 29.76px;
+  color: #25282b;
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1200px) {
+  .normalButton,
+  .normalButton1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 39.68px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 420px) {
+  .normalButton,
+  .normalButton1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 39.68px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

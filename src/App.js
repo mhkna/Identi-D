@@ -1,57 +1,127 @@
-import './App.css';
-import { useState } from 'react';
-import { ethers } from 'ethers'
-import Greeter from './artifacts/contracts/Greeter.sol/Greeter.json'
-
-// Update with the contract address logged out to the CLI when it was deployed
-const greeterAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+import {
+  Routes,
+  Route,
+  useNavigationType,
+  useLocation,
+} from "react-router-dom";
+import ViewCredentials from "./pages/ViewCredentials";
+import HomePage from "./pages/HomePage";
+import DocumentsSaved from "./pages/DocumentsSaved";
+import SignInPage from "./pages/SignInPage";
+import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
+import GetStartedPage from "./pages/GetStartedPage";
+import QRCode from "./pages/QRCode";
+import SplashScreen from "./pages/SplashScreen";
+import FrameComponent1 from "./pages/FrameComponent1";
+import FrameComponent from "./pages/FrameComponent";
+import ConfirmationPage from "./pages/ConfirmationPage";
+import IssueIdentityPage from "./pages/IssueIdentityPage";
+import HomePage1 from "./pages/HomePage1";
+import { useEffect } from "react";
 
 function App() {
-  // store greeting in local state
-  const [greeting, setGreetingValue] = useState()
+  const action = useNavigationType();
+  const location = useLocation();
+  const pathname = location.pathname;
 
-  // request access to the user's MetaMask account
-  async function requestAccount() {
-    await window.ethereum.request({ method: 'eth_requestAccounts' });
-  }
+  useEffect(() => {
+    if (action !== "POP") {
+      window.scrollTo(0, 0);
+    }
+  }, [action, pathname]);
 
-  // call the smart contract, read the current greeting value
-  async function fetchGreeting() {
-    if (typeof window.ethereum !== 'undefined') {
-      const provider = new ethers.providers.Web3Provider(window.ethereum)
-      const contract = new ethers.Contract(greeterAddress, Greeter.abi, provider)
-      try {
-        const data = await contract.greet()
-        console.log('data: ', data)
-      } catch (err) {
-        console.log("Error: ", err)
+  useEffect(() => {
+    let title = "";
+    let metaDescription = "";
+
+    switch (pathname) {
+      case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/home-page":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/documents-saved":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/sign-in-page":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/terms-and-conditions-page":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/get-started-page":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/qr-code":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/splash-screen":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/frame-1":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/frame-2":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/confirmation-page":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/issue-identity-page":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/home-page1":
+        title = "";
+        metaDescription = "";
+        break;
+    }
+
+    if (title) {
+      document.title = title;
+    }
+
+    if (metaDescription) {
+      const metaDescriptionTag = document.querySelector(
+        'head > meta[name="description"]'
+      );
+      if (metaDescriptionTag) {
+        metaDescriptionTag.content = metaDescription;
       }
     }
-  }
-
-  // call the smart contract, send an update
-  async function setGreeting() {
-    if (!greeting) return
-    if (typeof window.ethereum !== 'undefined') {
-      await requestAccount()
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
-      const signer = provider.getSigner()
-      const contract = new ethers.Contract(greeterAddress, Greeter.abi, signer)
-      const transaction = await contract.setGreeting(greeting)
-      await transaction.wait()
-      fetchGreeting()
-    }
-  }
+  }, [pathname]);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <button onClick={fetchGreeting}>Fetch Greeting</button>
-        <button onClick={setGreeting}>Set Greeting</button>
-        <input onChange={e => setGreetingValue(e.target.value)} placeholder="Set greeting" />
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<ViewCredentials />} />
+      <Route path="/home-page" element={<HomePage />} />
+      <Route path="/documents-saved" element={<DocumentsSaved />} />
+      <Route path="/sign-in-page" element={<SignInPage />} />
+      <Route
+        path="/terms-and-conditions-page"
+        element={<TermsAndConditionsPage />}
+      />
+      <Route path="/get-started-page" element={<GetStartedPage />} />
+      <Route path="/qr-code" element={<QRCode />} />
+      <Route path="/splash-screen" element={<SplashScreen />} />
+      <Route path="/frame-1" element={<FrameComponent1 />} />
+      <Route path="/frame-2" element={<FrameComponent />} />
+      <Route path="/confirmation-page" element={<ConfirmationPage />} />
+      <Route path="/issue-identity-page" element={<IssueIdentityPage />} />
+      <Route path="/home-page1" element={<HomePage1 />} />
+    </Routes>
   );
 }
-
 export default App;
