@@ -4,15 +4,17 @@ import styles from "./QRCode.module.css";
 
 import { ethers } from 'ethers'
 import Idnft from '../artifacts/contracts/Idnft.sol/Idnft.json'
+import QRCode from "react-qr-code";
 
 const contractAddress = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
 
-const QRCode = () => {
+const QRCodeComponent = () => {
   const [uri, setUri] = useState('');
 
   useEffect(() => {
-     // call api or anything
-     fetchUri()
+    //fetch token address
+    fetchUri()
+
   });
 
   const navigate = useNavigate();
@@ -110,8 +112,12 @@ const QRCode = () => {
         <div className={styles.scanYourQr}>Scan your QR Code</div>
         <div className={styles.image1Parent}>
 
-          <img className={styles.image1Icon} alt="" src="/image-1@2x.png" />
-          
+          { uri ?
+            <QRCode className={styles.image1Icon} value={uri} />
+            :
+            <img className={styles.image1Icon} alt="" src="/image-1@2x.png" />
+          }
+
           <img className={styles.vectorIcon} alt="" src="/vector.svg" />
           <img className={styles.vectorIcon1} alt="" src="/vector1.svg" />
           <img className={styles.vectorIcon2} alt="" src="/vector2.svg" />
@@ -127,4 +133,4 @@ const QRCode = () => {
   );
 };
 
-export default QRCode;
+export default QRCodeComponent;
