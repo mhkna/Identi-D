@@ -26,10 +26,9 @@ contract Idnft is ERC721 {
         _;
     }
 
-    function submitIdentity(string memory _name, uint256 _birthdate) external onlyIssuer {
+    function submitIdentity(string memory _name, uint256 _birthdate) external {
         require(bytes(_name).length > 0, "Name is required");
         require(_birthdate > 0, "Birthdate is required");
-        require(!_isIdentityRegistered(msg.sender), "Identity already exists");
 
         identities[msg.sender] = Identity(_name, _birthdate, false);
         uint256 tokenId = totalSupply;
@@ -38,7 +37,7 @@ contract Idnft is ERC721 {
         emit IdentitySubmitted(msg.sender, _name, _birthdate);
     }
 
-    function verifyIdentity(address _identityAddress) external {
+    function verifyIdentity(address _identityAddress) external onlyIssuer {
         require(_isIdentityRegistered(_identityAddress), "Identity not found");
         require(!identities[_identityAddress].isVerified, "Identity is already verified");
 

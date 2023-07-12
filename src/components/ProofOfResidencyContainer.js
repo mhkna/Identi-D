@@ -1,12 +1,43 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./ProofOfResidencyContainer.module.css";
+
+import { ethers } from 'ethers'
+import Idnft from '../artifacts/contracts/Idnft.sol/Idnft.json'
+
 const ProofOfResidencyContainer = () => {
   const navigate = useNavigate();
 
   const onIssueIdentityButtonClick = useCallback(() => {
     navigate("/confirmation-page");
   }, [navigate]);
+
+  // TODO: UPDATE THIS ADDRESS!!!
+  const contractAddress = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
+
+  async function requestAccount() {
+    await window.ethereum.request({ method: 'eth_requestAccounts' });
+  }
+
+  async function setIdentity() {
+    if (typeof window.ethereum !== 'undefined') {
+      await requestAccount()
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner()
+      const contract = new ethers.Contract(contractAddress, Idnft.abi, signer)
+      const transaction = await contract.submitIdentity("hi454re", 20498524)
+      await transaction.wait()
+
+      console.log("yo")
+      const signerAddress = signer.getAddress()
+      const identity = await contract.getIdentity(signerAddress)
+      console.log(`name: ${identity[0]}`)
+      console.log(`birthdate: ${BigInt(identity[1])}`)
+      console.log(`is verified?: ${identity[2]}`)
+
+      onIssueIdentityButtonClick()
+    }
+  }
 
   return (
     <div className={styles.overallInputBoxGroup}>
@@ -35,7 +66,7 @@ const ProofOfResidencyContainer = () => {
       </div>
       <div
         className={styles.issueIdentityButton}
-        onClick={onIssueIdentityButtonClick}
+        onClick={setIdentity}
       >
         <button className={styles.issueIdentityWrapper}>
           <div className={styles.issueIdentity}>Issue Identity</div>
