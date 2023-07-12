@@ -1,7 +1,20 @@
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./QRCode.module.css";
+
+import { ethers } from 'ethers'
+import Idnft from '../artifacts/contracts/Idnft.sol/Idnft.json'
+
+const contractAddress = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
+
 const QRCode = () => {
+  const [uri, setUri] = useState('');
+
+  useEffect(() => {
+     // call api or anything
+     fetchUri()
+  });
+
   const navigate = useNavigate();
 
   const onRectangle2Click = useCallback(() => {
@@ -11,6 +24,23 @@ const QRCode = () => {
   const onFrameContainer3Click = useCallback(() => {
     navigate("/home-page");
   }, [navigate]);
+
+  async function fetchUri() {
+    if (typeof window.ethereum !== 'undefined') {
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
+      const signer = await provider.getSigner()
+      const signerAddress = signer.getAddress()
+      const contract = new ethers.Contract(contractAddress, Idnft.abi, provider)
+      try {
+        console.log(signerAddress)
+        const data = await contract.getIdentity(signerAddress)
+        console.log(`uri: ${data[3]}`)
+        setUri(data[3])
+      } catch (err) {
+        console.log("Error: ", err)
+      }
+    }
+  }
 
   return (
     <div className={styles.qrCode}>
@@ -79,7 +109,9 @@ const QRCode = () => {
         <div className={styles.verifyCredential}>Verify Credential</div>
         <div className={styles.scanYourQr}>Scan your QR Code</div>
         <div className={styles.image1Parent}>
+
           <img className={styles.image1Icon} alt="" src="/image-1@2x.png" />
+          
           <img className={styles.vectorIcon} alt="" src="/vector.svg" />
           <img className={styles.vectorIcon1} alt="" src="/vector1.svg" />
           <img className={styles.vectorIcon2} alt="" src="/vector2.svg" />
