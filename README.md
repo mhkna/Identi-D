@@ -1,3 +1,14 @@
+#TO USE:
+compile abi
+npx hardhat compile
+
+run node (in second window)
+npx hardhat node
+
+deploy to local
+npx hardhat run scripts/deploy.js --network localhost
+
+
 # Basic Sample Hardhat Project
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
