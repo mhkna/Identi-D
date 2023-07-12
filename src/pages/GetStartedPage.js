@@ -14,7 +14,7 @@ const GetStartedPage = () => {
 
   return (
     <div className={styles.getStartedPage}>
-      <div className={styles.frameParent} onClick={onFrameContainerClick}>
+      <div className={styles.frameParent}>
         <button className={styles.frame} onClick={onFrameClick}>
           <div className={styles.getStarted}>Get started</div>
         </button>

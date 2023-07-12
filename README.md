@@ -8,6 +8,8 @@ npx hardhat node
 deploy to local
 npx hardhat run scripts/deploy.js --network localhost
 
+**UPDATE IN ProofOfResidencyContainer AND QRCODE AND ViewCredentials**
+
 
 # Basic Sample Hardhat Project
 
