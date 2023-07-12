@@ -15,7 +15,7 @@ const QRCodeComponent = () => {
     //fetch token address
     fetchUri()
 
-  });
+  }, []);
 
   const navigate = useNavigate();
 

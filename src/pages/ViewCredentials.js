@@ -1,8 +1,45 @@
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import PaymentContainer from "../components/PaymentContainer";
 import { useNavigate } from "react-router-dom";
 import styles from "./ViewCredentials.module.css";
+
+import { ethers } from 'ethers'
+import Idnft from '../artifacts/contracts/Idnft.sol/Idnft.json'
+
+const contractAddress = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
+
 const ViewCredentials = () => {
+  const [name, setName] = useState('');
+  const [birthdate, setBirthdate] = useState('');
+
+  useEffect(() => {
+    //fetch token address
+    fetchData()
+
+  }, []);
+
+  async function fetchData() {
+    if (typeof window.ethereum !== 'undefined') {
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
+      const signer = await provider.getSigner()
+      const signerAddress = signer.getAddress()
+      const contract = new ethers.Contract(contractAddress, Idnft.abi, provider)
+      try {
+        console.log(signerAddress)
+        const data = await contract.getIdentity(signerAddress)
+        console.log(`name: ${data[0]}`)
+        console.log(`birthdate ${data[1]}`)
+        setName(data[0])
+        setBirthdate(data[1])
+        console.log(name)
+        console.log(birthdate)
+      } catch (err) {
+        console.log("Error: ", err)
+      }
+      return
+    }
+  }
+
   const navigate = useNavigate();
 
   const onRectangle2Click = useCallback(() => {
@@ -49,7 +86,7 @@ const ViewCredentials = () => {
         <div className={styles.hairColor}>Hair Color</div>
         <div className={styles.div}>98746273</div>
         <div className={styles.div1}>6’7”</div>
-        <div className={styles.div2}>06/13/2023</div>
+        <div className={styles.div2}>07/12/2023</div>
         <div className={styles.black}>Black</div>
         <img
           className={styles.verifiablePresentationInner}
@@ -93,8 +130,17 @@ const ViewCredentials = () => {
           Continue
         </div>
         <div className={styles.decline}>Decline</div>
-        <div className={styles.bobSmith}>Bob Smith</div>
-        <div className={styles.div3}>5/13/1975</div>
+
+        {name ?
+          <div className={styles.bobSmith}>{name}</div> :
+          <div className={styles.bobSmith}>Bob Smith</div>
+        }
+
+        {birthdate ?
+          <div className={styles.div3}>{birthdate}</div> :
+          <div className={styles.div3}>5/13/1975</div>
+        }
+
       </div>
       <img className={styles.image12Icon} alt="" src="/image-12@2x.png" />
       <div className={styles.shakedownStreetNashvilleContainer}>
