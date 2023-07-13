@@ -1,6 +1,11 @@
 # To Use:
 
-compile abi
+install dependancies
+```shell
+npm install
+```
+
+compile smart contract abi
 ```shell
 npx hardhat compile
 ```
@@ -16,15 +21,9 @@ npx hardhat run scripts/deploy.js --network localhost
 ```
 
 **Update provided contract address in the following:**
-ProofOfResidencyContainer
-QRCode
-ViewCredentials
-
-
-install dependancies
-```shell
-npm install
-```
+1) ProofOfResidencyContainer
+2) QRCode
+3) ViewCredentials
 
 open project
 ```shell
