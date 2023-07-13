@@ -1,5 +1,7 @@
 # To Use:
 
+Note: You should have the metamask extension installed and configured to the proper network
+
 install dependancies
 ```shell
 npm install
