@@ -1,15 +1,35 @@
-#TO USE:
+# To Use:
+
 compile abi
+```shell
 npx hardhat compile
+```
 
 run node (in second window)
+```shell
 npx hardhat node
+```
 
-deploy to local
+deploy contract
+```shell
 npx hardhat run scripts/deploy.js --network localhost
+```
 
-**UPDATE IN ProofOfResidencyContainer AND QRCODE AND ViewCredentials**
+**Update provided contract address in the following:**
+ProofOfResidencyContainer
+QRCode
+ViewCredentials
 
+
+install dependancies
+```shell
+npm install
+```
+
+open project
+```shell
+npm start
+```
 
 # Basic Sample Hardhat Project
 
